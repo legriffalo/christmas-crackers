@@ -3,14 +3,14 @@ import React from 'react';
 interface HeaderProps {
   title: string;
   subtitle?: string;
-  icon?: React.ReactNode;
+  icon?: string;
 }
 
 const Header: React.FC<HeaderProps> = ({ title, subtitle, icon }) => {
   return (
     <header style={styles.header}>
       <div style={styles.iconContainer}>
-        {icon && icon}
+        <img src = {icon} style={styles.icon}/>
       </div>
       <div style={styles.textContainer}>
         <h1 style={styles.title}>{title}</h1>
@@ -52,6 +52,11 @@ const styles = {
     color: '#666666',
     fontWeight: 'normal',
   },
+  icon:{
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover' as const,
+  }
 };
 
 export default Header;

@@ -1,22 +1,27 @@
-import { useState } from 'react'
 import Header from './components/Header';
-// import { FaReact } from 'react-icons/fa';
+import Footer from './components/Footer.tsx';
+import Icon from './images/cracker.png';
+// import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  console.log('Icon path:', Icon); // Add this line to debug
 
   return (
     <div>
+    <div>
       <Header 
-        title="My Application"
-        subtitle="Welcome to our app"
-        // icon={<FaReact size={32} color="#61DAFB" />}
+        title="Christmas Crackers"
+        subtitle="Cheap oneliners and jokes ad-nauseam"
+        icon={Icon}
       />
-      {/* Rest of your app content */}
     </div>
+
+    <Footer />
+
+  </div>
   )
 }
 
-export default App
+export default App;
