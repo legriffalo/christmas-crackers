@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">PullMyCracker</string>
+    <string name="title_activity_main">PullMyCracker</string>
+    <string name="package_name">pull.my.cracker.app</string>
+    <string name="custom_url_scheme">pull.my.cracker.app</string>
+</resources>

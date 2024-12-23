@@ -14,6 +14,7 @@ const Header: React.FC<HeaderProps> = ({ title, subtitle, icon }) => {
       </div>
       <div style={styles.textContainer}>
         <h1 style={styles.title}>{title}</h1>
+
         {subtitle && <h2 style={styles.subtitle}>{subtitle}</h2>}
       </div>
     </header>
@@ -33,8 +34,8 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    width: '48px',
-    height: '48px',
+    width: '15vw',
+    height: '15vw',
   },
   textContainer: {
     display: 'flex',
@@ -42,20 +43,20 @@ const styles = {
   },
   title: {
     margin: 0,
-    fontSize: '1.5rem',
+    fontSize: '6vw',
     fontWeight: 'bold',
     color: '#333333',
   },
   subtitle: {
     margin: '0.25rem 0 0 0',
-    fontSize: '1rem',
+    fontSize: '3vw',
     color: '#666666',
     fontWeight: 'normal',
   },
   icon:{
     width: '100%',
     height: '100%',
-    objectFit: 'cover' as const,
+    objectFit: 'fill' as const,
   }
 };
 
